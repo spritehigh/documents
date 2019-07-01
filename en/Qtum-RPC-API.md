@@ -1,28 +1,28 @@
 # qtum-cli RPC API
 
-##1. getblockcount
+## 1. getblockcount
 
 Returns the number of blocks in the longest blockchain.
 
-####Result:
+#### Result:
 
     n (numeric) The current block count
 
-####Examples:
+#### Examples:
     qtum-cli getblockcount  
     
     curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockcount", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:3889/
 
-####test: 
+#### test: 
 
     ./qtum-cli getblockcount
-####test result: 
+#### test result: 
 
     395049
 
-##2. getblockchaininfo 
+## 2. getblockchaininfo 
 Returns an object containing various state info regarding blockchain processing.
-####Result:
+#### Result:
     {
       "chain": "xxxx",  (string) current network name as defined in BIP70 (main, test, regtest)
       "blocks": xxxxxx, (numeric) the current number of blocks processed in the server
