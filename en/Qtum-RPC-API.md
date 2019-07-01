@@ -1,6 +1,7 @@
-#qtum-cli RPC API
+# qtum-cli RPC API
 
 ##1. getblockcount
+
 Returns the number of blocks in the longest blockchain.
 
 ####Result:
@@ -9,6 +10,7 @@ Returns the number of blocks in the longest blockchain.
 
 ####Examples:
     qtum-cli getblockcount  
+    
     curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockcount", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:3889/
 
 ####test: 
